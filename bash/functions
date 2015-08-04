@@ -1,0 +1,58 @@
+#!/bin/sh
+
+# To use, run `gitlog` to get the commits for the past 12 hours
+# To get a different time range, run `gitlog 36` for the previous 36 hours
+function gitlog() {
+    if [ -z "$1" ]
+    then
+        HOURS=12
+    else
+        HOURS=$1
+    fi
+
+    # stdout for clear is ^[[H^[[2J
+    # Capture method output and ignore
+    NULL=`clear`;
+
+    git log --reverse --author="`git config user.name`" --format="%h (%s)" --since="`date -v-${HOURS}H`"
+}
+
+function run() {
+    OPTIONS=("cat" "dino" "crab");
+
+    FORMATTER=${OPTIONS[$((RANDOM%${#OPTIONS[*]}))]};
+
+    PROJECT_DIRECTORY=`git rev-parse --show-toplevel`
+
+    php "${PROJECT_DIRECTORY}/vendor/bin/phpspec" run --format=nyan.$FORMATTER --verbose
+}
+
+function phpspec() {
+    export USE_ZEND_ALLOC=0;
+
+    PROJECT_DIRECTORY=`git rev-parse --show-toplevel`
+
+    STOP_ON_FAILURE=''
+
+    if [[ $@ == *run* ]]
+    then
+    STOP_ON_FAILURE='--stop-on-failure'
+    fi
+
+    php "${PROJECT_DIRECTORY}/vendor/bin/phpspec" "$@" $STOP_ON_FAILURE --format=nyan.cat
+
+    export USE_ZEND_ALLOC=1
+
+    afplay ~/Downloads/jobs_done.mp3
+}
+
+function integration() {
+
+    PROJECT_DIRECTORY=`git rev-parse --show-toplevel`
+
+    php "${PROJECT_DIRECTORY}/vendor/bin/codecept" run Integration "$@" --verbose
+}
+
+function pb() {
+    echo "$@" | pbcopy
+}

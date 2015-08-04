@@ -1,0 +1,16 @@
+#!/bin/sh
+
+alias ^L="clear;"
+alias clip="xclip -selection clipboard"
+alias fbe="foreman run bundle exec"
+alias g="git"
+alias git="nocorrect git"
+alias gitcommit="git add -A .; git commit -v"
+alias ll="clear;ls -alh;"
+alias rc="RAILS_ENV=development foreman run bundle exec rails console"
+alias reload="source ~/.zshrc"
+alias rs="RAILS_ENV=development foreman run bundle exec rails server --binding=0.0.0.0"
+alias rsp="RAILS_ENV=production foreman run bundle exec rails server --binding=0.0.0.0"
+alias rspec="foreman run bundle exec rspec"
+alias rspecp="rspec"
+alias yolo="sudo"

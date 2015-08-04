@@ -1,0 +1,41 @@
+[filter "media"]
+  required = true
+  clean = git media clean %f
+  smudge = git media smudge %f
+[user]
+  name = Josh Freeman
+  email = jdfreeman11@gmail.com
+  signingkey = F92BE956
+[push]
+  default = simple
+[color]
+  ui = auto
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  whitespace = red reverse
+[core]
+  old = blue
+  editor = vim
+  excludesfile = /Users/josh/.gitignore_global
+  filemode = true
+[alias]
+  a = add
+  ap = add --patch
+  amend = commit --amend -v -S
+  s = status -sb
+  c = commit -v -S
+  co = checkout
+  cob = checkout -b
+  com = checkout master
+  coj = checkout jdfreeman
+  d = diff
+  dw = diff --word-diff
+  dc = diff --cached
+[merge]
+  ff = false
+  gpg-sign = F92BE956
+[commit]
+  template = /Users/josh/.gitcommittemplate
+[diff]
+  algorithm = patience
