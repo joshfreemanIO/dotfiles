@@ -26,6 +26,6 @@ source $ZSH/oh-my-zsh.sh
 
 source $DOTFILES/bash/paths
 source $DOTFILES/bash/aliases
-source $DOTFILES/bash/cd_client_aliases
+source $DOTFILES/bash/client_aliases
 source $DOTFILES/bash/functions
 export PATH="/usr/local/sbin:$PATH"
