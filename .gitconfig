@@ -22,9 +22,9 @@
 [alias]
   a = add
   ap = add --patch
-  amend = commit --amend -v -S
+  amend = commit --amend -v
   s = status -sb
-  c = commit -v -S
+  c = commit -v
   co = checkout
   cob = checkout -b
   com = checkout master
