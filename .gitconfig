@@ -5,7 +5,7 @@
 [user]
   name = Josh Freeman
   email = jdfreeman11@gmail.com
-  signingkey = F92BE956
+  signingkey = FCCB3C51
 [push]
   default = simple
 [color]
@@ -23,19 +23,23 @@
   a = add
   ap = add --patch
   amend = commit --amend -v
+  c = commit
   s = status -sb
-  c = commit -v
   co = checkout
   cob = checkout -b
   com = checkout master
+  commend = blame
   coj = checkout jdfreeman
   d = diff
   dw = diff --word-diff
   dc = diff --cached
+  thank = blame
+  delete-merged-branches = "!f() { git checkout --quiet master && git branch --merged | grep --invert-match '\\*' | xargs -n 1 git branch --delete; git checkout --quiet @{-1}; }; f"
+  # https://davidwalsh.name/delete-merged-branches-git
 [merge]
   ff = false
   gpg-sign = F92BE956
 [commit]
-  template = /Users/josh/.gitcommittemplate
+  template = ~/.gitcommittemplate
 [diff]
   algorithm = patience

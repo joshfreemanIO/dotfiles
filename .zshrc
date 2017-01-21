@@ -2,6 +2,8 @@
 
 export ZSH=$HOME/.oh-my-zsh
 export DOTFILES=$HOME/dotfiles
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
 
 ZSH_THEME="terminalparty"
 
@@ -28,3 +30,5 @@ source $DOTFILES/bash/paths
 source $DOTFILES/bash/aliases
 source $DOTFILES/bash/client_aliases
 source $DOTFILES/bash/functions
+
+export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting

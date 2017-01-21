@@ -1,1 +1,4 @@
+.ruby-version
 *.sublime*
+*.DS_Store
+.tags
