@@ -1,0 +1,11 @@
+#!/bin/sh
+
+set -e
+
+HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../home"
+
+gpg2 --decrypt $HOME/.ssh.zip.asc > $HOME/.ssh.zip
+
+unzip $HOME/.ssh -d $HOME/
+
+rm $HOME/.ssh.zip
