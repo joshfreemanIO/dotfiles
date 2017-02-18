@@ -1,0 +1,8 @@
+.ruby-version
+*.sublime*
+*.DS_Store
+.tags
+.DS_Store
+/*.xcodeproj/xcuserdata/justin.xcuserdatad
+/.vscode
+npm-debug.log
