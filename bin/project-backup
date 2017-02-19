@@ -1,0 +1,26 @@
+#!/bin/sh
+
+source "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../.env"
+
+if [ ! -f ~/$JGIT_CREDENTIALS_FILE ]
+then
+  echo "~/$JGIT_CREDENTIALS_FILE does not exist"
+
+  exit 1
+fi
+
+echo "Backup Started"
+
+find $PROJECTS -type d -name ".git" -print0 | while IFS= read -r -d $'\0' line; do
+  DIR="${line/\/.git/}"
+
+  cd "$DIR"
+
+  pwd
+
+  git fetch --all
+
+  jgit push "amazon-s3://$JGIT_CREDENTIALS_FILE@$BACKUP_BUCKET/Projects${DIR/$PROJECTS/}.git" refs/*:refs/*
+done
+
+echo "Backup Complete"

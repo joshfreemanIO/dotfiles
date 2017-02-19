@@ -1,0 +1,5 @@
+#!/bin/sh
+
+source "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../.env"
+
+aws s3 sync "$PICTURES_DIRECTORY" "s3://$BACKUP_BUCKET/photos" --profile="$AWS_PROFILE"

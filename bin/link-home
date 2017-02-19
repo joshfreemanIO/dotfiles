@@ -1,0 +1,13 @@
+#!/bin/sh
+
+source "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../.env"
+
+
+find $ROOT_DIR/home -type f -print0 | while IFS= read -r -d $'\0' line; do
+  FILE_NAME=${line/$ROOT_DIR\/home\/}
+
+  ln -sfn "$line" "$HOME_DIR/$FILE_NAME"
+
+  echo "Linked $line -> $HOME_DIR/$FILE_NAME"
+done
+

@@ -1,7 +1,7 @@
 #!/bin/zsh
 
 export ZSH=$HOME/.oh-my-zsh
-export DOTFILES=$HOME/dotfiles
+export DOTFILES=$HOME/Projects/joshfreemanIO/dotfiles
 export NVM_DIR="$HOME/.nvm"
 . "/usr/local/opt/nvm/nvm.sh"
 

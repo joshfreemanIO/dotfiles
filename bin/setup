@@ -1,0 +1,38 @@
+#!/bin/sh
+
+xcode-select --install
+
+open https://atom.io
+open https://getkap.co
+open https://getpocket.com
+open https://nodejs.org/en/
+open https://rvm.io/
+open https://screenhero.com
+open https://slack.com
+open https://tunnelblick.net
+open https://www.google.com/chrome/browser/desktop/index.html
+open https://www.videolan.org
+open https://www.eclipse.org/jgit/download/
+
+# Install Homebrew & Homebrew Packages
+ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+
+brew install awscli
+brew install bash-completion
+brew install git
+brew install gnupg2
+brew install python3
+brew install tree
+brew install wget
+brew install curl --with-openssl
+
+pip3 install git+https://github.com/donnemartin/gitsome.git
+
+
+# Hardening
+# https://github.com/drduh/macOS-Security-and-Privacy-Guide
+
+curl "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" | sudo tee -a /etc/hosts
+brew install dnsmasq --with-dnssec
+cp ~/homebrew/opt/dnsmasq/dnsmasq.conf.example ~/homebrew/etc/dnsmasq.conf
+
