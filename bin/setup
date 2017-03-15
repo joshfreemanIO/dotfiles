@@ -13,26 +13,26 @@ open https://tunnelblick.net
 open https://www.google.com/chrome/browser/desktop/index.html
 open https://www.videolan.org
 open https://www.eclipse.org/jgit/download/
+open https://www.iterm2.com/version3.html
+open https://itunes.apple.com/us/app/pocket/id568494494?mt=12
 
 # Install Homebrew & Homebrew Packages
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
-brew install awscli
-brew install bash-completion
-brew install git
-brew install gnupg2
-brew install python3
-brew install tree
-brew install wget
-brew install curl --with-openssl
+brew install awscli \
+             bash-completion \
+             git-completion \
+             git \
+             gpg \
+             python3 \
+             tree \
+             wget \
+             curl --with-openssl \
+             postgres
+
+gpg --keyserver hkp://keys.gnupg.net --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3
+curl -sSL https://get.rvm.io | bash -s stable
 
 pip3 install git+https://github.com/donnemartin/gitsome.git
 
-
-# Hardening
-# https://github.com/drduh/macOS-Security-and-Privacy-Guide
-
 curl "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" | sudo tee -a /etc/hosts
-brew install dnsmasq --with-dnssec
-cp ~/homebrew/opt/dnsmasq/dnsmasq.conf.example ~/homebrew/etc/dnsmasq.conf
-
