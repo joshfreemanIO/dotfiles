@@ -36,3 +36,12 @@ curl -sSL https://get.rvm.io | bash -s stable
 pip3 install git+https://github.com/donnemartin/gitsome.git
 
 curl "https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts" | sudo tee -a /etc/hosts
+
+# Vim 
+mkdir -p ~/.vim/autoload ~/.vim/bundle && \
+curl -LSso ~/.vim/autoload/pathogen.vim https://tpo.pe/pathogen.vim
+
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
+
+cd ~/.vim/bundle
+git clone git://github.com/altercation/vim-colors-solarized.git
