@@ -1,6 +1,6 @@
 #!/bin/sh
 
-export DOTFILES=$HOME/Projects/joshfreemanIO/dotfiles
+export DOTFILES=$HOME/Projects/joshfreeman.io/dotfiles
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
