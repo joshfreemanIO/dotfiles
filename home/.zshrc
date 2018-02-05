@@ -32,3 +32,4 @@ source $DOTFILES/bash/client_aliases
 source $DOTFILES/bash/functions
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export ERL_AFLAGS="-kernel shell_history enabled"

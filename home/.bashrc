@@ -31,3 +31,4 @@ export NVM_DIR="$HOME/.nvm"
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [ -f /Users/josh/Projects/grok/TechBlocEvents-Infrastructure/node_modules/tabtab/.completions/sls.bash ] && . /Users/josh/Projects/grok/TechBlocEvents-Infrastructure/node_modules/tabtab/.completions/sls.bashexport PATH="$(brew --prefix qt@5.5)/bin:$PATH"
+export ERL_AFLAGS="-kernel shell_history enabled"
