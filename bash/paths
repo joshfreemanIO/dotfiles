@@ -11,8 +11,17 @@ export PATH=/usr/local/sbin:$PATH
 export PATH=/usr/sbin:$PATH
 export PATH=$PATH:$GOPATH/bin
 export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
+export PATH=$PATH:~/android-sdks/platform-tools/
+export PATH=$PATH:~/android-sdks/tools/
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 export PATH="$PATH:$HOME/.rvm/bin"
 
 export GOPATH=$HOME/go
+
+export ANDROID_HOME=/Users/josh/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+export JAVA_HOME=$(/usr/libexec/java_home -v 1.8)

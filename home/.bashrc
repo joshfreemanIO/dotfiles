@@ -32,3 +32,5 @@ export NVM_DIR="$HOME/.nvm"
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [ -f /Users/josh/Projects/grok/TechBlocEvents-Infrastructure/node_modules/tabtab/.completions/sls.bash ] && . /Users/josh/Projects/grok/TechBlocEvents-Infrastructure/node_modules/tabtab/.completions/sls.bashexport PATH="$(brew --prefix qt@5.5)/bin:$PATH"
 export ERL_AFLAGS="-kernel shell_history enabled"
+
+export PATH="$HOME/.yarn/bin:$HOME/.config/yarn/global/node_modules/.bin:$PATH"

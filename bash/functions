@@ -1,5 +1,9 @@
 #!/bin/sh
 
+function class_make() {
+    php artisan make:class "$@"
+}
+
 # To use, run `gitlog` to get the commits for the past 12 hours
 # To get a different time range, run `gitlog 36` for the previous 36 hours
 function gitlog() {
@@ -55,4 +59,8 @@ function integration() {
 
 function pb() {
     echo "$@" | pbcopy
+}
+
+phpunit () {
+    ./vendor/bin/phpunit "$@"
 }
