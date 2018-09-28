@@ -1,0 +1,35 @@
+// Place your key bindings in this file to overwrite the defaults
+[
+  {
+    "key": "shift+cmd+l",
+    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "shift+alt+i",
+    "command": "-editor.action.insertCursorAtEndOfEachLineSelected",
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "ctrl+a",
+    "command": "cursorLineStart",
+    "when": "editorTextFocus && vim.active && vim.use<C-a>"
+  },
+  {
+    "key": "ctrl+e",
+    "command": "cursorLineEnd",
+    "when": "editorTextFocus && vim.active && vim.use<C-a>"
+  },
+  {
+    "key": "ctrl+cmd+f",
+    "command": "workbench.action.terminal.focus"
+  },
+  {
+    "key": "alt+`",
+    "command": "workbench.files.action.saveAllInGroup"
+  },
+  {
+    "key": "cmd+`",
+    "command": "workbench.action.nextEditor"
+  }
+]

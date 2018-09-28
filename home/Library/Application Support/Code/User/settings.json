@@ -1,0 +1,54 @@
+{
+    "editor.detectIndentation": false,
+    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'Courier New', monospace, 'Droid Sans Fallback'",
+    "editor.fontLigatures": true,
+    "vim.disableAnnoyingNeovimMessage": true,
+    "vim.disableAnnoyingGcMessage": true,
+    "vim.overrideCopy": false,
+    "files.associations": {
+        "*js": "javascriptreact"
+    },
+    "files.trimTrailingWhitespace": true,
+    "files.insertFinalNewline": true,
+    "workbench.editor.showTabs": false,
+    "editor.tabSize": 2,
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact",
+        {
+            "language": "html",
+            "autoFix": true
+        }
+    ],
+    "eslint.autoFixOnSave": true,
+    "instantmarkdown.autoOpenBrowser": false,
+    "workbench.statusBar.visible": true,
+    "workbench.activityBar.visible": true,
+    "editor.minimap.enabled": false,
+    "typescript.check.tscVersion": false,
+    "workbench.startupEditor": "newUntitledFile",
+    "elixirLinter.useStrict": true,
+    "markdown.extension.toc.orderedList": true,
+    "markdown.extension.toc.plaintext": true,
+    "markdown.extension.toc.updateOnSave": true,
+    "react.beautify.onSave": true,
+    "markdown.extension.quickStyling": true,
+    "[php]": {
+        "editor.tabSize": 4
+    },
+    "[javascript]": {
+        "editor.tabSize": 2
+    },
+    "[html]": {
+        "editor.tabSize": 2
+    },
+    "window.zoomLevel": 0,
+    "elixir.useElixirSense": false,
+    "[javascriptreact]": {
+        "editor.tabSize": 2
+    },
+    "extensions.ignoreRecommendations": true,
+    "workbench.colorTheme": "Monokai",
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always"
+}
