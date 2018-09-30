@@ -6,6 +6,7 @@ source $HOME/.joshrc.android
 source $HOME/.joshrc.bash-completion
 source $HOME/.joshrc.coreutils
 source $HOME/.joshrc.curl
+source $HOME/.joshrc.dotfiles
 source $HOME/.joshrc.erlang
 source $HOME/.joshrc.git
 source $HOME/.joshrc.gpg
