@@ -1,0 +1,22 @@
+#!/bin/sh
+
+source $HOME/.joshrc.aliases
+source $HOME/.joshrc.aliases.client
+source $HOME/.joshrc.android
+source $HOME/.joshrc.bash-completion
+source $HOME/.joshrc.coreutils
+source $HOME/.joshrc.curl
+source $HOME/.joshrc.erlang
+source $HOME/.joshrc.git
+source $HOME/.joshrc.gpg
+source $HOME/.joshrc.homebrew
+source $HOME/.joshrc.functions
+source $HOME/.joshrc.go
+source $HOME/.joshrc.nvm
+source $HOME/.joshrc.paths
+source $HOME/.joshrc.rvm
+source $HOME/.joshrc.vim
+source $HOME/.joshrc.zsh # ????
+
+# Setup ZSH
+

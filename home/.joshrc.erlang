@@ -1,0 +1,4 @@
+#!/bin/sh
+
+export ERL_AFLAGS="-kernel shell_history enabled"
+export MANPATH=$MANPATH:/usr/local/opt/erlang/lib/erlang/man

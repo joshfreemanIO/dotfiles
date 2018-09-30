@@ -1,13 +1,36 @@
-#!/bin/sh
+#!/usr/bin/ruby
+require 'shellwords'
 
-source "$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/../.env"
+class Paths
+  def self.link_map
+    dotfile_home_files.reduce({}) do |map, path|
+      map[path.shellescape] = path.gsub(dotfile_home, user_home).shellescape
+      map
+    end
+  end
 
+  private
 
-find $ROOT_DIR/home -type f -print0 | while IFS= read -r -d $'\0' line; do
-  FILE_NAME=${line/$ROOT_DIR\/home\/}
+  def self.dotfile_home_files
+    Dir
+      .glob([
+        "#{Paths.dotfile_home}/**/*",
+      ], File::FNM_DOTMATCH)
+      .reject do | file |
+        File.directory?(file)
+      end
+  end
 
-  ln -sfn "$line" "$HOME_DIR/$FILE_NAME"
+  def self.user_home
+    File.expand_path('~')
+  end
 
-  echo "Linked $line -> $HOME_DIR/$FILE_NAME"
-done
+  def self.dotfile_home
+    File.expand_path("#{File.dirname(__FILE__)}/../home/")
+  end
+end
 
+Paths.link_map.each do |dotfile_path, home_path|
+  `ln -sfn #{dotfile_path} #{home_path}`
+  puts "Linked #{dotfile_path} -> #{home_path}"
+end
