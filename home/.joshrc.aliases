@@ -10,3 +10,6 @@ alias ll="clear;ls -alh;"
 alias rc="RAILS_ENV=development foreman run bundle exec rails console"
 alias reload="source ~/.bashrc"
 alias yolo="sudo"
+
+alias cdprojects="clear; cd ~/Projects/"
+alias cdgrok="clear; cd ~/Projects/Grok/"
