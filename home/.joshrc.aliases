@@ -1,11 +1,12 @@
-#!/bin/zsh
+#!/bin/sh
 
 alias ^L="clear;"
+alias dotfiles-source-joshrc="source ~/.josh."
+alias dotfiles="clear; cd ~/Projects/dotfiles; code .;"
 alias gf="git fetch"
 alias gp="git push"
+alias gti="git"
 alias ll="clear;ls -alh;"
 alias rc="RAILS_ENV=development foreman run bundle exec rails console"
 alias reload="source ~/.bashrc"
 alias yolo="sudo"
-alias gti="git"
-alias dotfiles="clear; cd ~/Projects/dotfiles; code .;"
