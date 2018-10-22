@@ -50,5 +50,6 @@
     "extensions.ignoreRecommendations": true,
     "workbench.colorTheme": "Monokai",
     "explorer.confirmDragAndDrop": false,
-    "javascript.updateImportsOnFileMove.enabled": "always"
-}
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "eslint.packageManager": "yarn"
+  }
