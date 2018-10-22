@@ -3,8 +3,8 @@
   clean = git media clean %f
   smudge = git media smudge %f
 [user]
-	name = Josh Freeman
-	email = jdfreeman11@gmail.com
+  name = Josh Freeman
+  email = jdfreeman11@gmail.com
   signingkey = FCCB3C51
 [push]
   default = simple

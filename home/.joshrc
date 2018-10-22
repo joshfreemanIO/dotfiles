@@ -1,5 +1,7 @@
 #!/bin/sh
 
+export PS1="\w $ "
+
 source $HOME/.joshrc.aliases
 source $HOME/.joshrc.aliases.client
 source $HOME/.joshrc.android
