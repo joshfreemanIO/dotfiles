@@ -9,3 +9,7 @@ if [ -f '/Users/joshfreeman/google-cloud-sdk/path.bash.inc' ]; then . '/Users/jo
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/joshfreeman/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/joshfreeman/google-cloud-sdk/completion.bash.inc'; fi
+
+. $HOME/.asdf/asdf.sh
+
+. $HOME/.asdf/completions/asdf.bash

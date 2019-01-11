@@ -3,3 +3,5 @@
 [ -f /usr/local/etc/bash_completion ] && . /usr/local/etc/bash_completion
 
 source ~/.bash.completion.git
+source ~/.bash.completion.helm
+source ~/.bash.completion.kubectl
