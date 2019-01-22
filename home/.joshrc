@@ -10,16 +10,16 @@ source $HOME/.joshrc.coreutils
 source $HOME/.joshrc.curl
 source $HOME/.joshrc.dotfiles
 source $HOME/.joshrc.erlang
+source $HOME/.joshrc.functions
+source $HOME/.joshrc.functions
 source $HOME/.joshrc.git
+source $HOME/.joshrc.go
+source $HOME/.joshrc.google
 source $HOME/.joshrc.gpg
 source $HOME/.joshrc.homebrew
-source $HOME/.joshrc.functions
-source $HOME/.joshrc.go
 source $HOME/.joshrc.nvm
 source $HOME/.joshrc.paths
 source $HOME/.joshrc.rvm
 source $HOME/.joshrc.vim
-source $HOME/.joshrc.zsh # ????
-
-# Setup ZSH
-
+source $HOME/.joshrc.yarn
+source $HOME/.joshrc.zsh
