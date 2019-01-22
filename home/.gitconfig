@@ -17,7 +17,7 @@
 [core]
   old = blue
   editor = vim
-  excludesfile = /Users/josh/.gitignore_global
+  excludesfile = ~/.gitignore_global
   filemode = true
 [alias]
   a = add
