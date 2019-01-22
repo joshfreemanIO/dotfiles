@@ -16,5 +16,5 @@ When setup, the file in the `home` directory are linked to the `~`, acorrding to
 
 [5.Install Applications](/README/5.install-applications.md)
 
-[6.Configure MacOS](/README/6.configure-macOS.md)
+[6.Configure MacOS](/README/6.configure-macos.md)
 
